@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse and keyboard events</title>
+    <style>
+        #circle{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+        }
+        #diff
+        {
+            display: flex;
+            justify-content: space-evenly;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>mouse and keyboard events</h1>
+    </center>
+
+    <div id="diff">
+    <article>
+        <h2>mouse events</h2>
+
+        <ol>
+            <li>click</li>
+            <li>dblclick</li>
+            <li>mouseenter</li>
+            <li>mouseleave</li>
+            <li>contextmenu</li>
+            <li>mousedown</li>
+            <li>mouseup</li>
+            <li>mousemove</li>
+            <li>mouseover</li>
+            <li>mouseout</li>
+           
+        </ol>
+    </article>
+
+    <article>
+        <h2>keyboard events</h2>
+        <ol>
+            <li>keydown</li>
+            <li>keyup</li>
+        </ol>
+    </article>
+</div>
+<br>
+    <center>
+        <div id="circle"></div>
+    </center>
+    <br>
+    <center><button id="touch">mouse events</button></center>
+
+    <script>
+        let know = document.querySelector("#touch");
+
+        // click event
+
+        // know.addEventListener("click",function()
+        // {
+        //     let d=document.querySelector("div");
+        //     d.style.backgroundColor="red"
+        // })
+
+        //     know.addEventListener("click",()=>
+        // {
+        //     alert("this is click event")
+        // })
+
+        //dblclick event
+
+        // know.addEventListener("dblclick",function()
+        // {
+        //     let d=document.querySelector("div");
+        //     d.style.backgroundColor="pink"
+        // });
+
+        //mouse enter
+
+        // know.addEventListener("mouseenter",function()
+        // {
+        //     let d=document.querySelector("div");
+        //     d.style.backgroundColor="yellow"
+        // });
+        
+        //mouse leave
+
+        // know.addEventListener("mouseleave",function()
+        // {
+        //     let d=document.querySelector("div");
+        //     d.style.backgroundColor="green"
+        // });
+
+        // contextmenu
+
+        know.addEventListener("contextmenu",function()
+        {
+            let d=document.querySelector("div");
+            d.style.backgroundColor="grey"
+        });
+
+        // here we start keyboard events
+
+        // keydown
+
+        // window.addEventListener("keydown",kedown)
+        
+        // function kedown(kkk)
+        // {
+        // console.log(kkk.key);
+        // }
+
+        // window.addEventListener("keydown",function(kdown){
+
+        //             console.log(kdown.key);
+        // })
+
+        // keyup
+
+        window.addEventListener("keyup",function(kdown){
+
+                    console.log(kdown.key);
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
