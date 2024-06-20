@@ -1,1 +1,1 @@
-# i-js
+# events-js
